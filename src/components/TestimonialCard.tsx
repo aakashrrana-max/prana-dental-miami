@@ -11,7 +11,7 @@ interface Props {
 }
 
 export const TestimonialCard = ({ name, location, quote, badge, translationNote, delay = 0 }: Props) => (
-  <AnimatedSection delay={delay} className="bg-white border border-prana-border rounded-lg p-8">
+  <AnimatedSection delay={delay} className="bg-white border border-prana-border rounded-3xl p-8">
     <div className="flex gap-0.5 mb-5">
       {[...Array(5)].map((_, i) => (
         <Star key={i} size={13} className="text-prana-terra fill-prana-terra" />

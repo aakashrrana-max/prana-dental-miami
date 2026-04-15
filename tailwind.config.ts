@@ -47,6 +47,7 @@ export default {
           terra: "#C48A6A",
           border: "#DDD9D3",
           whatsapp: "#25D366",
+          stone: "#C8C3BB",
         },
       },
       borderRadius: {
