@@ -37,7 +37,7 @@ const Homepage = () => {
         title="Dental Implants Miami | All-on-4 from $9,999 | Prana Dental"
         description="Get dental implants and All-on-4 in Miami starting at $1,850. Free CT scan + consultation with Dr. Aakash Rana. Same-day teeth where clinically appropriate."
         canonical="https://pranadentalmia.com/"
-        ogTitle="Prana Dental Miami — Life-Changing Dentistry at Fair Prices"
+        ogTitle="Prana Dental Miami - Life-Changing Dentistry at Fair Prices"
         ogDescription="All-on-4 from $9,999. Single implants from $1,850. Free CT scan. 3,000+ implants placed by Dr. Aakash Rana."
         jsonLd={PRANA_JSONLD}
       />

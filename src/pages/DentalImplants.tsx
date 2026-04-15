@@ -10,16 +10,16 @@ import { WHATSAPP_LINK } from "@/lib/constants";
 import drImg from "@/assets/dr-rana.jpg";
 
 const STEPS = [
-  { number: "01", title: "Free Consultation + CT Scan", description: "Dr. Rana evaluates your case with 3D CBCT imaging. You'll know exactly what's possible — before committing to anything." },
+  { number: "01", title: "Free Consultation + CT Scan", description: "Dr. Rana evaluates your case with 3D CBCT imaging. You'll know exactly what's possible - before committing to anything." },
   { number: "02", title: "Implant Placement", description: "The titanium implant is placed using a guided surgical protocol. Most patients return to normal activity the following day." },
-  { number: "03", title: "Custom Crown Delivery", description: "A custom zirconia or porcelain crown is placed — matched precisely to the color, shape, and size of your natural teeth." },
+  { number: "03", title: "Custom Crown Delivery", description: "A custom zirconia or porcelain crown is placed - matched precisely to the color, shape, and size of your natural teeth." },
 ];
 
 const FAQ = [
   { q: "Is the surgery painful?", a: "Most patients say it was easier than a tooth extraction. We use local anesthesia and offer sedation. Post-op discomfort is typically mild and managed with over-the-counter medication." },
-  { q: "How long do dental implants last?", a: "With proper care, the titanium implant post can last a lifetime through osseointegration. The crown typically lasts 15–25+ years." },
-  { q: "Why is your price so much lower?", a: "Efficient workflows, an in-house digital lab, and fair margins. We use the same premium materials as high-priced clinics — we just don't mark them up 3x." },
-  { q: "Am I a candidate?", a: "Most adults in good health with a missing tooth are candidates. Some cases require a bone graft first — which Dr. Rana performs in-house. A free CT scan will give you a clear answer." },
+  { q: "How long do dental implants last?", a: "With proper care, the titanium implant post can last a lifetime through osseointegration. The crown typically lasts 15 to 25+ years." },
+  { q: "Why is your price so much lower?", a: "Efficient workflows, an in-house digital lab, and fair margins. We use the same premium materials as high-priced clinics - we just don't mark them up 3x." },
+  { q: "Am I a candidate?", a: "Most adults in good health with a missing tooth are candidates. Some cases require a bone graft first - which Dr. Rana performs in-house. A free CT scan will give you a clear answer." },
 ];
 
 const DentalImplantsPage = () => (
@@ -36,13 +36,13 @@ const DentalImplantsPage = () => (
       <div className="absolute inset-0 bg-gradient-to-br from-prana-charcoal via-[#1f1c1a] to-[#0f0e0d] pointer-events-none" />
       <div className="absolute top-0 right-0 w-[50%] h-full pointer-events-none hidden lg:block">
         <div className="absolute inset-0 bg-gradient-to-r from-prana-charcoal via-prana-charcoal/55 to-transparent z-10" />
-        {/* IMAGE PLACEHOLDER: Single implant result — confident patient with natural smile.
+        {/* IMAGE PLACEHOLDER: Single implant result - confident patient with natural smile.
             Close-up smile showing one restored tooth (not obvious which one).
             Tone: clean, premium, lifestyle. Natural skin tone, warm lighting.
-            Asset needed: patient photography from clinic — consent required. */}
+            Asset needed: patient photography from clinic - consent required. */}
         <img
           src={drImg}
-          alt="Dr. Rana — Single implant specialist, Prana Dental Miami"
+          alt="Dr. Rana - Single implant specialist, Prana Dental Miami"
           className="w-full h-full object-cover object-top"
           width={900}
           height={1200}
@@ -91,13 +91,13 @@ const DentalImplantsPage = () => (
             <em className="font-heading italic font-light">to Your Real Tooth.</em>
           </h2>
           <p className="body-text mb-5">
-            A small titanium post placed into your jawbone fuses naturally with your bone over time — just like a real tooth root. A custom crown sits on top, matched perfectly to your surrounding teeth in color, shape, and size.
+            A small titanium post placed into your jawbone fuses naturally with your bone over time - just like a real tooth root. A custom crown sits on top, matched perfectly to your surrounding teeth in color, shape, and size.
           </p>
           <p className="body-text mb-8">
             Unlike a bridge, implants don't grind down adjacent teeth. Unlike a denture, they never slip or need adhesive. They preserve your bone, protect your bite, and last decades.
           </p>
           <div className="flex flex-wrap gap-2">
-            {["Titanium Implant Post", "Custom Zirconia Crown", "Bone Preserving", "Permanent Fix", "No Adjacent Damage", "Placed in 1–2 Hours"].map((tag) => (
+            {["Titanium Implant Post", "Custom Zirconia Crown", "Bone Preserving", "Permanent Fix", "No Adjacent Damage", "Placed in 1 to 2 Hours"].map((tag) => (
               <span key={tag} className="font-body text-[11px] tracking-[0.06em] text-prana-text-muted border border-prana-border px-3 py-1.5 rounded-sm uppercase">{tag}</span>
             ))}
           </div>
@@ -127,7 +127,7 @@ const DentalImplantsPage = () => (
         <AnimatedSection>
           <p className="eyebrow">Transparent Pricing</p>
           <h2 className="headline-section text-white mb-8">$1,850 Cash · $2,150 Financed.</h2>
-          <p className="font-body text-[14px] text-white/35 mb-8 italic">Everything included — no hidden add-ons at checkout:</p>
+          <p className="font-body text-[14px] text-white/35 mb-8 italic">Everything included - no hidden add-ons at checkout:</p>
           <div className="space-y-4">
             {[
               "Free consultation and 3D CT scan",
