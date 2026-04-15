@@ -1,14 +1,22 @@
 import { WHATSAPP_LINK } from "@/lib/constants";
 
+/* Mobile sticky CTA bar — anchors to on-page form first; WhatsApp as secondary */
 export const StickyMobileCTA = () => (
-  <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-prana-charcoal h-14 flex items-center justify-center">
+  <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-prana-charcoal border-t border-white/10 h-14 flex items-center justify-center gap-6 px-6">
+    <a
+      href="#contact"
+      className="text-white font-body font-medium text-[12px] uppercase tracking-[0.15em]"
+    >
+      Book Free Consultation →
+    </a>
+    <span className="w-px h-5 bg-white/20" />
     <a
       href={WHATSAPP_LINK}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-white font-body font-medium text-[12px] uppercase tracking-[0.15em]"
+      className="text-white/50 font-body text-[11px] uppercase tracking-[0.12em]"
     >
-      Book Free Consultation →
+      WhatsApp
     </a>
   </div>
 );

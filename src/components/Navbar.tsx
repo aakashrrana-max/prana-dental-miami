@@ -13,9 +13,9 @@ const SERVICES = [
 ];
 
 const TOP_LINKS = [
+  { label: "Pricing", to: "/pricing" },
   { label: "Results", to: "/before-after" },
   { label: "About", to: "/about" },
-  { label: "Blog", to: "/blog" },
 ];
 
 export const Navbar = () => {

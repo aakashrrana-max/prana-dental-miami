@@ -5,5 +5,5 @@ export const WHATSAPP_LINK = "https://wa.me/12012803528";
 export const ADDRESS = "3050 Biscayne Blvd, Suite 703, Miami, FL 33137";
 export const INSTAGRAM = "https://instagram.com/doctorrana.dds";
 export const YOUTUBE = "https://youtube.com/@DoctorRanaDDS";
-export const BOOKING_CTA = "BOOK YOUR FREE CT SCAN";
+export const BOOKING_CTA = "BOOK MY FREE CONSULTATION";
 export const SITE_URL = "https://pranadentalmia.com";
