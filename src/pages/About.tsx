@@ -43,7 +43,7 @@ const About = () => (
             </p>
             <div className="flex flex-wrap gap-3">
               {["3,000+ Implants", "300+ Full Arches", "10+ Years", "Nobel Biocare Trained"].map(b => (
-                <span key={b} className="font-body text-[11px] border border-white/15 text-white/60 px-3 py-1.5 rounded-sm uppercase tracking-[0.06em]">{b}</span>
+                <span key={b} className="font-body text-[11px] border border-white/15 text-white/60 px-3 py-1.5 rounded-2xl uppercase tracking-[0.06em]">{b}</span>
               ))}
             </div>
           </motion.div>

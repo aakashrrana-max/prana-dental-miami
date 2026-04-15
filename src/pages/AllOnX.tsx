@@ -63,10 +63,10 @@ const AllOnXPage = () => (
               Starting at $9,999 per arch - while most Miami clinics charge $25,000+. Free CT scan to find out if you qualify.
             </p>
             <div className="flex flex-wrap gap-3 mb-9">
-              <span className="inline-flex items-center gap-1.5 bg-white/8 border border-white/12 rounded-sm px-3.5 py-2 font-body text-[12px] text-white/80">
+              <span className="inline-flex items-center gap-1.5 bg-white/8 border border-white/12 rounded-2xl px-3.5 py-2 font-body text-[12px] text-white/80">
                 Per arch · <strong className="text-white">From $9,999</strong>
               </span>
-              <span className="inline-flex items-center gap-1.5 bg-white/8 border border-white/12 rounded-sm px-3.5 py-2 font-body text-[12px] text-white/80">
+              <span className="inline-flex items-center gap-1.5 bg-white/8 border border-white/12 rounded-2xl px-3.5 py-2 font-body text-[12px] text-white/80">
                 Financing from <strong className="text-white">$199/mo</strong>
               </span>
             </div>
@@ -83,7 +83,7 @@ const AllOnXPage = () => (
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.6 }}
-          className="hidden lg:flex absolute bottom-12 right-8 xl:right-16 items-center gap-4 bg-white/[0.07] backdrop-blur-sm border border-white/12 rounded-sm px-5 py-4 z-20"
+          className="hidden lg:flex absolute bottom-12 right-8 xl:right-16 items-center gap-4 bg-white/[0.07] backdrop-blur-sm border border-white/12 rounded-2xl px-5 py-4 z-20"
         >
           <Award size={20} className="text-prana-terra flex-shrink-0" />
           <div>
@@ -120,7 +120,7 @@ const AllOnXPage = () => (
             </p>
             <div className="flex flex-wrap gap-2">
               {["Permanent · Not Removable", "Nobel Biocare Implants", "Zirconia Bridge", "3D Planned", "Same-Day Provisional"].map((tag) => (
-                <span key={tag} className="font-body text-[11px] tracking-[0.06em] text-prana-text-muted border border-prana-border px-3 py-1.5 rounded-sm uppercase">{tag}</span>
+                <span key={tag} className="font-body text-[11px] tracking-[0.06em] text-prana-text-muted border border-prana-border px-3 py-1.5 rounded-2xl uppercase">{tag}</span>
               ))}
             </div>
           </AnimatedSection>

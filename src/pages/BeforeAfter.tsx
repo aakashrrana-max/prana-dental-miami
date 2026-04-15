@@ -112,7 +112,7 @@ const BeforeAfter = () => {
               <button
                 key={f.key}
                 onClick={() => setActive(f.key)}
-                className={`font-body text-[11px] uppercase tracking-[0.12em] px-5 py-2.5 rounded-sm border transition-all duration-200 ${
+                className={`font-body text-[11px] uppercase tracking-[0.12em] px-5 py-2.5 rounded-2xl border transition-all duration-200 ${
                   active === f.key
                     ? "bg-prana-charcoal text-white border-prana-charcoal"
                     : "border-prana-border text-prana-text-muted hover:border-prana-charcoal/30 hover:text-prana-charcoal"

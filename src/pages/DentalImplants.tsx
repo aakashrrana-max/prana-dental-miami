@@ -65,10 +65,10 @@ const DentalImplantsPage = () => (
               A titanium implant and custom zirconia crown that looks, feels, and bites like the tooth you lost. Starting at $1,850 cash.
             </p>
             <div className="flex flex-wrap gap-3 mb-9">
-              <span className="inline-flex items-center gap-1.5 bg-white/8 border border-white/12 rounded-sm px-3.5 py-2 font-body text-[12px] text-white/80">
+              <span className="inline-flex items-center gap-1.5 bg-white/8 border border-white/12 rounded-2xl px-3.5 py-2 font-body text-[12px] text-white/80">
                 Cash price · <strong className="text-white">$1,850</strong>
               </span>
-              <span className="inline-flex items-center gap-1.5 bg-white/8 border border-white/12 rounded-sm px-3.5 py-2 font-body text-[12px] text-white/80">
+              <span className="inline-flex items-center gap-1.5 bg-white/8 border border-white/12 rounded-2xl px-3.5 py-2 font-body text-[12px] text-white/80">
                 Financed · <strong className="text-white">$2,150</strong>
               </span>
             </div>
@@ -98,7 +98,7 @@ const DentalImplantsPage = () => (
           </p>
           <div className="flex flex-wrap gap-2">
             {["Titanium Implant Post", "Custom Zirconia Crown", "Bone Preserving", "Permanent Fix", "No Adjacent Damage", "Placed in 1 to 2 Hours"].map((tag) => (
-              <span key={tag} className="font-body text-[11px] tracking-[0.06em] text-prana-text-muted border border-prana-border px-3 py-1.5 rounded-sm uppercase">{tag}</span>
+              <span key={tag} className="font-body text-[11px] tracking-[0.06em] text-prana-text-muted border border-prana-border px-3 py-1.5 rounded-2xl uppercase">{tag}</span>
             ))}
           </div>
         </AnimatedSection>

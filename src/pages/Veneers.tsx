@@ -65,10 +65,10 @@ const VeneersPage = () => (
               Custom porcelain veneers digitally designed before treatment begins. Full smile packages from $10,000. Financing from $199/month.
             </p>
             <div className="flex flex-wrap gap-3 mb-9">
-              <span className="inline-flex items-center gap-1.5 bg-white/8 border border-white/12 rounded-sm px-3.5 py-2 font-body text-[12px] text-white/80">
+              <span className="inline-flex items-center gap-1.5 bg-white/8 border border-white/12 rounded-2xl px-3.5 py-2 font-body text-[12px] text-white/80">
                 Full set · <strong className="text-white">From $10,000</strong>
               </span>
-              <span className="inline-flex items-center gap-1.5 bg-white/8 border border-white/12 rounded-sm px-3.5 py-2 font-body text-[12px] text-white/80">
+              <span className="inline-flex items-center gap-1.5 bg-white/8 border border-white/12 rounded-2xl px-3.5 py-2 font-body text-[12px] text-white/80">
                 Financing · <strong className="text-white">$199/mo</strong>
               </span>
             </div>
@@ -98,7 +98,7 @@ const VeneersPage = () => (
           </p>
           <div className="flex flex-wrap gap-2">
             {["Custom Porcelain", "Digitally Designed", "Natural Translucency", "2 Visits", "Stain Resistant", "10 to 20 Year Lifespan"].map((tag) => (
-              <span key={tag} className="font-body text-[11px] tracking-[0.06em] text-prana-text-muted border border-prana-border px-3 py-1.5 rounded-sm uppercase">{tag}</span>
+              <span key={tag} className="font-body text-[11px] tracking-[0.06em] text-prana-text-muted border border-prana-border px-3 py-1.5 rounded-2xl uppercase">{tag}</span>
             ))}
           </div>
         </AnimatedSection>
