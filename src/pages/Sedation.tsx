@@ -9,7 +9,7 @@ import clinicRoomImg from "@/assets/clinic-room.jpg";
 
 const FAQ = [
   { q: "What types of sedation do you offer?", a: "We offer oral sedation (pill taken before the appointment) and IV sedation (administered intravenously for deeper relaxation). Dr. Rana is licensed and certified for both. We'll recommend the right level based on your anxiety and the procedure." },
-  { q: "Will I be unconscious?", a: "Not with standard IV sedation — you'll be in a deeply relaxed, twilight state. Most patients have little or no memory of the procedure. General anesthesia (fully unconscious) is different and rarely needed for implant surgery." },
+  { q: "Will I be unconscious?", a: "Not with standard IV sedation - you'll be in a deeply relaxed, twilight state. Most patients have little or no memory of the procedure. General anesthesia (fully unconscious) is different and rarely needed for implant surgery." },
   { q: "Is sedation safe for implant surgery?", a: "Yes. IV sedation for dental procedures has an excellent safety record. Dr. Rana monitors vitals throughout. Most patients are far more surprised by how easy the experience was than by any discomfort." },
   { q: "How long does the sedation last?", a: "IV sedation wears off within a few hours. You'll need someone to drive you home. Most patients feel normal by the evening. Oral sedation is milder and fades faster." },
   { q: "Does sedation cost extra?", a: "IV sedation is an add-on to the procedure cost. We'll provide the exact cost in your treatment plan. Many patients find it worth every dollar for the peace of mind and the ability to complete more treatment in fewer visits." },
@@ -29,7 +29,7 @@ const Sedation = () => (
       <div className="absolute inset-0 bg-gradient-to-br from-prana-charcoal via-[#1f1c1a] to-[#0f0e0d]" />
       <div className="absolute top-0 right-0 w-[48%] h-full hidden lg:block">
         <div className="absolute inset-0 bg-gradient-to-r from-prana-charcoal via-prana-charcoal/55 to-transparent z-10" />
-        {/* IMAGE: clinic-room.jpg — premium treatment room, clean and calm */}
+        {/* IMAGE: clinic-room.jpg - premium treatment room, clean and calm */}
         <img src={clinicRoomImg} alt="Calm, premium treatment room at Prana Dental Miami" className="w-full h-full object-cover" />
       </div>
 

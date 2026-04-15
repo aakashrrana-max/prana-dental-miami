@@ -1,15 +1,17 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
-import logoImg from "@/assets/full_logo.png";
+import pdSymbol from "@/assets/pd-symbol.jpg";
 import { PHONE, PHONE_LINK, WHATSAPP_LINK } from "@/lib/constants";
+import { useI18n } from "@/lib/i18n";
 
 const SERVICES = [
-  { label: "All-on-X Full Arch", to: "/all-on-x" },
-  { label: "Single Implants", to: "/dental-implants" },
-  { label: "Porcelain Veneers", to: "/veneers" },
-  { label: "Sedation Dentistry", to: "/sedation" },
-  { label: "Pricing", to: "/pricing" },
+  { label: "All-on-4", to: "/all-on-x" },
+  { label: "Implants", to: "/dental-implants" },
+  { label: "Veneers", to: "/veneers" },
+  { label: "Ortho", to: "/ortho" },
+  { label: "Emergency", to: "/emergency" },
+  { label: "Sedation", to: "/sedation" },
 ];
 
 const TOP_LINKS = [
@@ -24,6 +26,7 @@ export const Navbar = () => {
   const [servicesOpen, setServicesOpen] = useState(false);
   const location = useLocation();
   const dropRef = useRef<HTMLDivElement>(null);
+  const { lang, setLang, t } = useI18n();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -38,12 +41,9 @@ export const Navbar = () => {
 
   useEffect(() => { setOpen(false); setServicesOpen(false); }, [location]);
 
-  // Close dropdown on outside click
   useEffect(() => {
     const handler = (e: MouseEvent) => {
-      if (dropRef.current && !dropRef.current.contains(e.target as Node)) {
-        setServicesOpen(false);
-      }
+      if (dropRef.current && !dropRef.current.contains(e.target as Node)) setServicesOpen(false);
     };
     document.addEventListener("mousedown", handler);
     return () => document.removeEventListener("mousedown", handler);
@@ -59,14 +59,13 @@ export const Navbar = () => {
           : "bg-white/95 backdrop-blur-sm border-b border-prana-border/50"
       }`}>
         <div className="container-main flex items-center justify-between h-[68px] md:h-[76px] px-6 md:px-12">
-
+          {/* Logo - PD symbol only, 2x bigger */}
           <Link to="/" className="flex-shrink-0">
-            <img src={logoImg} alt="Prana Dental Miami" className="h-[50px] md:h-[60px] w-auto" />
+            <img src={pdSymbol} alt="Prana Dental" className="h-[56px] md:h-[64px] w-auto rounded-lg" />
           </Link>
 
           {/* Desktop nav */}
           <div className="hidden lg:flex items-center gap-7">
-            {/* Services dropdown */}
             <div className="relative" ref={dropRef}>
               <button
                 onClick={() => setServicesOpen(v => !v)}
@@ -74,10 +73,10 @@ export const Navbar = () => {
                   isServiceActive ? "text-prana-charcoal" : "text-prana-charcoal/45 hover:text-prana-charcoal"
                 }`}
               >
-                Treatments <ChevronDown size={12} className={`transition-transform ${servicesOpen ? "rotate-180" : ""}`} />
+                {t("Treatments", "Servicios")} <ChevronDown size={12} className={`transition-transform ${servicesOpen ? "rotate-180" : ""}`} />
               </button>
               {servicesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-52 bg-white border border-prana-border shadow-[0_8px_30px_0_rgba(0,0,0,0.08)] z-50">
+                <div className="absolute top-full left-0 mt-2 w-52 bg-white border border-prana-border shadow-[0_8px_30px_0_rgba(0,0,0,0.08)] z-50 rounded-2xl overflow-hidden">
                   {SERVICES.map(s => (
                     <Link
                       key={s.to}
@@ -110,11 +109,18 @@ export const Navbar = () => {
 
           {/* Desktop right */}
           <div className="hidden lg:flex items-center gap-4">
+            {/* Language toggle */}
+            <button
+              onClick={() => setLang(lang === "en" ? "es" : "en")}
+              className="font-body text-[11px] uppercase tracking-[0.1em] text-prana-text-muted hover:text-prana-charcoal transition-colors border border-prana-border rounded-full px-3 py-1.5"
+            >
+              {lang === "en" ? "ES" : "EN"}
+            </button>
             <a href={PHONE_LINK} className="flex items-center gap-1.5 font-body text-[12px] text-prana-text-muted hover:text-prana-charcoal transition-colors">
               <Phone size={13} />{PHONE}
             </a>
             <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="btn-primary text-[11px] py-2.5 px-5">
-              Book Free Consultation
+              {t("Book Free Consultation", "Consulta Gratis")}
             </a>
           </div>
 
@@ -129,20 +135,28 @@ export const Navbar = () => {
         <div className="fixed inset-0 z-[60] bg-white flex flex-col">
           <div className="flex items-center justify-between h-[68px] px-6 border-b border-prana-border">
             <Link to="/" onClick={() => setOpen(false)}>
-              <img src={logoImg} alt="Prana Dental Miami" className="h-[46px] w-auto" />
+              <img src={pdSymbol} alt="Prana Dental" className="h-[50px] w-auto rounded-lg" />
             </Link>
-            <button onClick={() => setOpen(false)} className="text-prana-charcoal p-2 -mr-2"><X size={22} /></button>
+            <div className="flex items-center gap-3">
+              <button
+                onClick={() => setLang(lang === "en" ? "es" : "en")}
+                className="font-body text-[11px] uppercase tracking-[0.1em] text-prana-text-muted border border-prana-border rounded-full px-3 py-1.5"
+              >
+                {lang === "en" ? "ES" : "EN"}
+              </button>
+              <button onClick={() => setOpen(false)} className="text-prana-charcoal p-2 -mr-2"><X size={22} /></button>
+            </div>
           </div>
 
           <div className="flex flex-col flex-1 overflow-y-auto px-8 pt-8 gap-1">
-            <p className="font-body text-[10px] uppercase tracking-[0.18em] text-prana-text-muted mb-3">Treatments</p>
+            <p className="font-body text-[10px] uppercase tracking-[0.18em] text-prana-text-muted mb-3">{t("Treatments", "Servicios")}</p>
             {SERVICES.map(s => (
               <Link key={s.to} to={s.to} className={`font-body text-[15px] py-2.5 border-b border-prana-border/40 ${location.pathname === s.to ? "text-prana-charcoal font-medium" : "text-prana-charcoal/60"}`}>
                 {s.label}
               </Link>
             ))}
             <div className="mt-6 mb-3">
-              <p className="font-body text-[10px] uppercase tracking-[0.18em] text-prana-text-muted mb-3">More</p>
+              <p className="font-body text-[10px] uppercase tracking-[0.18em] text-prana-text-muted mb-3">{t("More", "Más")}</p>
               {TOP_LINKS.map(l => (
                 <Link key={l.to} to={l.to} className={`block font-body text-[15px] py-2.5 border-b border-prana-border/40 ${location.pathname === l.to ? "text-prana-charcoal font-medium" : "text-prana-charcoal/60"}`}>
                   {l.label}
@@ -153,7 +167,7 @@ export const Navbar = () => {
 
           <div className="px-8 pb-10 pt-6 border-t border-prana-border space-y-3">
             <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="btn-primary w-full block text-center">
-              Book Free Consultation
+              {t("Book Free Consultation", "Consulta Gratis")}
             </a>
             <a href={PHONE_LINK} className="block text-center font-body text-[13px] text-prana-text-muted py-2">{PHONE}</a>
           </div>

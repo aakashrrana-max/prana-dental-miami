@@ -11,17 +11,17 @@ import cbctImg from "@/assets/cbct-scanner.jpg";
 import zirconiaImg from "@/assets/zirconia-arch.jpg";
 
 const STEPS = [
-  { number: "01", title: "Free CT Scan + Consultation", description: "Full 3D CBCT imaging at no cost. Dr. Rana reviews everything personally and tells you exactly what's possible — before you commit to anything." },
+  { number: "01", title: "Free CT Scan + Consultation", description: "Full 3D CBCT imaging at no cost. Dr. Rana reviews everything personally and tells you exactly what's possible - before you commit to anything." },
   { number: "02", title: "Digital Treatment Plan", description: "Your case is mapped in 3D. Every implant position is digitally planned. You see the expected outcome before anything begins." },
   { number: "03", title: "Implant Placement + Same-Day Teeth", description: "Implants placed under sedation. Provisional teeth attached the same day, where clinically appropriate." },
-  { number: "04", title: "Final Zirconia Restoration", description: "Your permanent bridge — custom-crafted zirconia for natural aesthetics, full chewing strength, and lasting durability." },
+  { number: "04", title: "Final Zirconia Restoration", description: "Your permanent bridge - custom-crafted zirconia for natural aesthetics, full chewing strength, and lasting durability." },
 ];
 
 const FAQ = [
   { q: "Will the surgery be painful?", a: "Most patients report minimal discomfort. We use IV sedation and local anesthesia. Post-operative pain is typically managed with over-the-counter medication and most patients return to normal activity within a few days." },
   { q: "What if I don't have enough bone?", a: "Many patients told they lack bone elsewhere are actually candidates at Prana Dental. Dr. Rana uses advanced CBCT imaging and may recommend bone grafting or zygomatic implants. A 'no' elsewhere is frequently a 'yes' here." },
-  { q: "How long will my teeth last?", a: "All-on-X restorations are designed to be permanent. Titanium implants integrate with your bone and zirconia bridges typically last 15–25+ years with proper care and regular check-ups." },
-  { q: "What happens if something goes wrong?", a: "Complications are rare with proper planning and guided protocols. Dr. Rana provides all follow-up care in-house. If any adjustment is needed post-op, we handle it — no runaround." },
+  { q: "How long will my teeth last?", a: "All-on-X restorations are designed to be permanent. Titanium implants integrate with your bone and zirconia bridges typically last 15 to 25+ years with proper care and regular check-ups." },
+  { q: "What happens if something goes wrong?", a: "Complications are rare with proper planning and guided protocols. Dr. Rana provides all follow-up care in-house. If any adjustment is needed post-op, we handle it - no runaround." },
 ];
 
 const AllOnXPage = () => (
@@ -40,7 +40,7 @@ const AllOnXPage = () => (
         <div className="absolute inset-0 bg-gradient-to-r from-prana-charcoal via-prana-charcoal/50 to-transparent z-10" />
         <img
           src={baAllonx}
-          alt="All-on-X full arch transformation — Prana Dental Miami"
+          alt="All-on-X full arch transformation - Prana Dental Miami"
           className="w-full h-full object-cover object-center"
           width={900}
           height={1200}
@@ -60,13 +60,13 @@ const AllOnXPage = () => (
               <em className="italic text-prana-terra">One Day.</em>
             </h1>
             <p className="font-body text-[16px] font-light text-white/60 leading-[1.75] mb-5 max-w-[420px]">
-              Starting at $9,999 per arch — while most Miami clinics charge $25,000+. Free CT scan to find out if you qualify.
+              Starting at $9,999 per arch - while most Miami clinics charge $25,000+. Free CT scan to find out if you qualify.
             </p>
             <div className="flex flex-wrap gap-3 mb-9">
-              <span className="inline-flex items-center gap-1.5 bg-white/8 border border-white/12 rounded-sm px-3.5 py-2 font-body text-[12px] text-white/80">
+              <span className="inline-flex items-center gap-1.5 bg-white/8 border border-white/12 rounded-2xl px-3.5 py-2 font-body text-[12px] text-white/80">
                 Per arch · <strong className="text-white">From $9,999</strong>
               </span>
-              <span className="inline-flex items-center gap-1.5 bg-white/8 border border-white/12 rounded-sm px-3.5 py-2 font-body text-[12px] text-white/80">
+              <span className="inline-flex items-center gap-1.5 bg-white/8 border border-white/12 rounded-2xl px-3.5 py-2 font-body text-[12px] text-white/80">
                 Financing from <strong className="text-white">$199/mo</strong>
               </span>
             </div>
@@ -83,7 +83,7 @@ const AllOnXPage = () => (
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.6 }}
-          className="hidden lg:flex absolute bottom-12 right-8 xl:right-16 items-center gap-4 bg-white/[0.07] backdrop-blur-sm border border-white/12 rounded-sm px-5 py-4 z-20"
+          className="hidden lg:flex absolute bottom-12 right-8 xl:right-16 items-center gap-4 bg-white/[0.07] backdrop-blur-sm border border-white/12 rounded-2xl px-5 py-4 z-20"
         >
           <Award size={20} className="text-prana-terra flex-shrink-0" />
           <div>
@@ -101,7 +101,7 @@ const AllOnXPage = () => (
           <AnimatedSection>
             <img
               src={cbctImg}
-              alt="3D CBCT cone beam CT scanner — Prana Dental Miami"
+              alt="3D CBCT cone beam CT scanner - Prana Dental Miami"
               className="w-full h-[420px] object-cover"
               loading="lazy"
             />
@@ -110,17 +110,17 @@ const AllOnXPage = () => (
             <p className="eyebrow">What Is All-on-X?</p>
             <h2 className="headline-section text-prana-charcoal mb-8">
               A Full Arch.<br />
-              <em className="font-heading italic font-light">Just 4–6 Implants.</em>
+              <em className="font-heading italic font-light">Just 4 to 6 Implants.</em>
             </h2>
             <p className="body-text mb-5">
-              All-on-X replaces an entire row of teeth using four to six titanium implants per arch. Unlike dentures, these teeth are permanently fixed to your jaw — not removable, not adhesive-dependent.
+              All-on-X replaces an entire row of teeth using four to six titanium implants per arch. Unlike dentures, these teeth are permanently fixed to your jaw - not removable, not adhesive-dependent.
             </p>
             <p className="body-text mb-8">
               They don't slip. They don't click. They don't come out. You eat what you want, speak clearly, and smile without thinking about it.
             </p>
             <div className="flex flex-wrap gap-2">
               {["Permanent · Not Removable", "Nobel Biocare Implants", "Zirconia Bridge", "3D Planned", "Same-Day Provisional"].map((tag) => (
-                <span key={tag} className="font-body text-[11px] tracking-[0.06em] text-prana-text-muted border border-prana-border px-3 py-1.5 rounded-sm uppercase">{tag}</span>
+                <span key={tag} className="font-body text-[11px] tracking-[0.06em] text-prana-text-muted border border-prana-border px-3 py-1.5 rounded-2xl uppercase">{tag}</span>
               ))}
             </div>
           </AnimatedSection>
@@ -151,12 +151,12 @@ const AllOnXPage = () => (
           <AnimatedSection>
             <p className="eyebrow">Transparent Pricing</p>
             <h2 className="headline-section text-white mb-4">From $9,999 Per Arch.</h2>
-            <p className="font-body text-[15px] text-white/40 mb-10 line-through">Most Miami clinics: $25,000–$35,000 per arch</p>
+            <p className="font-body text-[15px] text-white/40 mb-10 line-through">Most Miami clinics: $25,000 to $35,000 per arch</p>
             <div className="space-y-4">
               {[
                 "Free CT scan and consultation",
                 "Digital 3D treatment planning",
-                "Implant surgery (4–6 titanium implants per arch)",
+                "Implant surgery (4 to 6 titanium implants per arch)",
                 "Same-day provisional teeth (where clinically appropriate)",
                 "Final custom zirconia restoration",
                 "All follow-up visits included",
@@ -171,17 +171,17 @@ const AllOnXPage = () => (
           <AnimatedSection delay={0.1}>
             <div className="border border-white/12 p-8 md:p-10">
               <p className="eyebrow">Financing Example</p>
-              <h3 className="font-heading text-[28px] font-light text-white mb-8">Both Arches · Full Mouth</h3>
+              <h3 className="font-heading text-[28px] font-light text-white mb-8">One Arch · All-on-X</h3>
               <div className="space-y-5 divide-y divide-white/10">
                 {[
-                  ["Total Investment", "$20,000"],
-                  ["Monthly Payment", "~$333 / mo"],
+                  ["Total Investment", "$10,000"],
+                  ["Monthly Payment", "~$199/mo", true],
                   ["Term", "60 months"],
                   ["Interest", "0% (OAC)"],
-                ].map(([label, value]) => (
-                  <div key={label} className="flex justify-between items-center font-body text-[15px] pt-5 first:pt-0">
+                ].map(([label, value, highlight]) => (
+                  <div key={label as string} className="flex justify-between items-center font-body text-[15px] pt-5 first:pt-0">
                     <span className="text-white/40">{label}</span>
-                    <span className="text-white font-medium">{value}</span>
+                    <span className={`font-medium ${highlight ? "text-prana-terra text-[22px] font-heading" : "text-white"}`}>{value}</span>
                   </div>
                 ))}
               </div>

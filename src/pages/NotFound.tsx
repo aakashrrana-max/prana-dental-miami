@@ -13,11 +13,11 @@ const NotFound = () => {
   return (
     <>
       <SEO
-        title="404 — Page Not Found | Prana Dental Miami"
+        title="404 | Page Not Found | Prana Dental Miami"
         description="The page you are looking for does not exist."
         canonical="https://pranadentalmia.com/404"
       />
-      <section className="section-ivory min-h-screen flex items-center justify-center section-padding">
+      <section className="section-cream min-h-screen flex items-center justify-center section-padding">
         <div className="text-center max-w-lg">
           <p className="eyebrow">404</p>
           <h1 className="headline-section text-prana-charcoal mb-4">This page does not exist.</h1>

@@ -12,9 +12,9 @@ interface Props {
 }
 
 export const OfferCard = ({ label, headline, anchor, bullets, link = "/#book", delay = 0, image }: Props) => (
-  <AnimatedSection delay={delay} className="group bg-white border border-prana-border overflow-hidden flex flex-col h-full hover:border-prana-charcoal/30 transition-colors duration-500 rounded-lg">
+  <AnimatedSection delay={delay} className="group bg-white border border-prana-border overflow-hidden flex flex-col h-full hover:border-prana-charcoal/30 transition-colors duration-500 rounded-3xl">
     {image && (
-      <div className="overflow-hidden">
+      <div className="overflow-hidden rounded-t-3xl">
         <img src={image} alt={label} className="w-full h-52 object-cover group-hover:scale-[1.02] transition-transform duration-700" loading="lazy" width={600} height={400} />
       </div>
     )}

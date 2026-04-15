@@ -30,20 +30,21 @@ import { AccordionFAQ } from "@/components/AccordionFAQ";
 import { FullWidthCTA } from "@/components/FullWidthCTA";
 import { SEO, PRANA_JSONLD } from "@/lib/seo";
 import { PHONE, PHONE_LINK, WHATSAPP_LINK } from "@/lib/constants";
+import { useI18n } from "@/lib/i18n";
 import drImg from "@/assets/dr-rana.jpg";
 import clinicRoomImg from "@/assets/clinic-room.jpg";
-import cbctImg from "@/assets/cbct-scanner.jpg";
-import miamiSkylineImg from "@/assets/miami-skyline.jpg";
+import clinicHallwayImg from "@/assets/clinic-hallway.jpg";
+import cbctImg from "@/assets/cbct-scan.webp";
 import patientSmileImg from "@/assets/patient-smile-result.jpg";
 import baAllonx from "@/assets/before-after-allonx.jpg";
 import baVeneers from "@/assets/before-after-veneers.jpg";
 
 const FAQ_ITEMS = [
-  { q: "Is the procedure painful?", a: "Over 90% of our patients describe the experience as easier than they expected. We use advanced local anesthesia and offer oral and IV sedation. Most rate their discomfort at 2 out of 10 or less — significantly less painful than a tooth extraction." },
-  { q: "How long do dental implants last?", a: "Titanium implants are designed to be permanent. The post fuses directly to your jawbone through osseointegration — and can last a lifetime with proper oral hygiene. Crowns and zirconia bridges typically last 15–25+ years." },
-  { q: "Why is Prana's pricing so much lower?", a: "We operate an in-house digital lab, use high-volume surgical protocols, and minimize overhead. You receive the same premium-grade materials — Nobel Biocare, Straumann, full-arch zirconia — that $35,000 clinics use. We simply charge what's fair." },
+  { q: "Is the procedure painful?", a: "Over 90% of our patients describe the experience as easier than they expected. We use advanced local anesthesia and offer oral and IV sedation. Most rate their discomfort at 2 out of 10 or less." },
+  { q: "How long do dental implants last?", a: "Titanium implants are designed to be permanent. The post fuses directly to your jawbone through osseointegration and can last a lifetime with proper oral hygiene. Crowns and zirconia bridges typically last 15 to 25+ years." },
+  { q: "Why is Prana's pricing so much lower?", a: "We operate an in-house digital lab, use high-volume surgical protocols, and minimize overhead. You receive the same premium-grade materials that $35,000 clinics use. We simply charge what is fair." },
   { q: "I was told I don't have enough bone.", a: "Many patients referred to us after being turned away elsewhere are candidates here. Dr. Rana uses CBCT 3D imaging to evaluate your bone anatomy. If grafting or alternative placement is needed, he performs it in-house." },
-  { q: "How quickly can I have teeth?", a: "For All-on-X full-arch cases, provisional teeth can typically be placed the same day — where clinically appropriate. Final zirconia restorations are delivered within 3–5 months." },
+  { q: "How quickly can I have teeth?", a: "For All-on-X full-arch cases, provisional teeth can typically be placed the same day, where clinically appropriate. Final zirconia restorations are delivered within 3 to 5 months." },
   { q: "Do you offer payment plans?", a: "Yes. We offer 0% interest financing for qualified patients, with monthly payments as low as $199/month. Applying does not affect your credit score. We also accept most major dental insurance plans." },
   { q: "I'm terrified of dental work. Can you help?", a: "Absolutely. We offer oral and IV sedation options. Dr. Rana and the team are trained to work with anxious patients. We go at your pace, answer every question, and never rush you." },
   { q: "Is Prana Dental a legitimate practice?", a: "Prana Dental is a licensed Florida dental practice led by Dr. Aakash Rana, DMD. Over 3,000 implants placed, 300+ full-arch cases, 4.9-star rating across 200+ Google reviews. Fully accredited and insured." },
