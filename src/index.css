@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 18% 96%;
+    --foreground: 0 0% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 30 12% 92%;
+    --secondary-foreground: 0 0% 10%;
+    --muted: 30 12% 92%;
+    --muted-foreground: 0 0% 42%;
+    --accent: 22 42% 59%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 28 10% 84%;
+    --input: 28 10% 84%;
+    --ring: 0 0% 0%;
+    --radius: 0.25rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 10%;
+    --sidebar-primary: 0 0% 0%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 30 12% 92%;
+    --sidebar-accent-foreground: 0 0% 10%;
+    --sidebar-border: 28 10% 84%;
+    --sidebar-ring: 0 0% 0%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-prana-cream text-foreground font-body antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  /* Subtle texture overlay */
+  .texture-overlay {
+    position: relative;
+  }
+  .texture-overlay::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 20%, rgba(196, 138, 106, 0.06) 0%, transparent 50%),
+                radial-gradient(ellipse at 70% 80%, rgba(196, 138, 106, 0.04) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Sections */
+  .section-cream {
+    @apply bg-prana-cream;
+  }
+  .section-warm {
+    @apply bg-prana-warm;
+  }
+  .section-white {
+    @apply bg-white;
+  }
+  .section-dark {
+    @apply bg-prana-charcoal text-white;
+  }
+  .section-padding {
+    @apply py-20 md:py-28 px-6 md:px-12;
+  }
+  .container-main {
+    @apply max-w-[1200px] mx-auto;
+  }
+
+  /* Typography */
+  .eyebrow {
+    @apply text-[11px] uppercase tracking-[0.2em] text-prana-terra font-body font-medium mb-4;
+  }
+  .headline-display {
+    @apply text-[44px] md:text-[68px] leading-[1.08] font-heading font-light tracking-[-0.01em];
+  }
+  .headline-section {
+    @apply text-[34px] md:text-[50px] leading-[1.1] font-heading font-light;
+  }
+  .headline-sub {
+    @apply text-[22px] md:text-[28px] leading-[1.2] font-heading font-light;
+  }
+  .text-sub {
+    @apply text-[16px] md:text-[18px] leading-[1.7] font-body font-light text-prana-text-muted;
+  }
+  .body-text {
+    @apply text-[16px] leading-[1.7] font-body font-light text-prana-text-muted;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply inline-block bg-prana-charcoal text-white font-body font-medium text-[12px] uppercase tracking-[0.14em]
+           px-7 py-3.5 rounded-sm transition-all duration-300 hover:bg-prana-black cursor-pointer text-center;
+  }
+  .btn-ghost {
+    @apply inline-block border border-prana-charcoal text-prana-charcoal font-body font-medium text-[12px] uppercase tracking-[0.14em]
+           px-7 py-3.5 rounded-sm transition-all duration-300 hover:bg-prana-charcoal hover:text-white cursor-pointer text-center;
+  }
+  .btn-white {
+    @apply inline-block bg-white text-prana-charcoal font-body font-medium text-[12px] uppercase tracking-[0.14em]
+           px-7 py-3.5 rounded-sm transition-all duration-300 hover:bg-white/90 cursor-pointer text-center;
+  }
+  .btn-ghost-white {
+    @apply inline-block border border-white/30 text-white font-body font-medium text-[12px] uppercase tracking-[0.14em]
+           px-7 py-3.5 rounded-sm transition-all duration-300 hover:border-white cursor-pointer text-center;
+  }
+  /* Hero dark-bg specific buttons */
+  .btn-hero-primary {
+    @apply inline-block bg-prana-terra text-white font-body font-semibold text-[12px] uppercase tracking-[0.14em]
+           px-8 py-4 rounded-sm transition-all duration-300 hover:bg-[#b87a5a] cursor-pointer text-center;
+  }
+  .btn-hero-ghost {
+    @apply inline-block border border-white/25 text-white/80 font-body font-medium text-[12px] uppercase tracking-[0.14em]
+           px-8 py-4 rounded-sm transition-all duration-300 hover:border-white/50 hover:text-white cursor-pointer text-center;
+  }
+}
