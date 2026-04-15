@@ -171,17 +171,17 @@ const AllOnXPage = () => (
           <AnimatedSection delay={0.1}>
             <div className="border border-white/12 p-8 md:p-10">
               <p className="eyebrow">Financing Example</p>
-              <h3 className="font-heading text-[28px] font-light text-white mb-8">Both Arches · Full Mouth</h3>
+              <h3 className="font-heading text-[28px] font-light text-white mb-8">One Arch · All-on-X</h3>
               <div className="space-y-5 divide-y divide-white/10">
                 {[
-                  ["Total Investment", "$20,000"],
-                  ["Monthly Payment", "~$333 / mo"],
+                  ["Total Investment", "$10,000"],
+                  ["Monthly Payment", "~$199/mo", true],
                   ["Term", "60 months"],
                   ["Interest", "0% (OAC)"],
-                ].map(([label, value]) => (
-                  <div key={label} className="flex justify-between items-center font-body text-[15px] pt-5 first:pt-0">
+                ].map(([label, value, highlight]) => (
+                  <div key={label as string} className="flex justify-between items-center font-body text-[15px] pt-5 first:pt-0">
                     <span className="text-white/40">{label}</span>
-                    <span className="text-white font-medium">{value}</span>
+                    <span className={`font-medium ${highlight ? "text-prana-terra text-[22px] font-heading" : "text-white"}`}>{value}</span>
                   </div>
                 ))}
               </div>
