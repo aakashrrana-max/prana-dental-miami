@@ -9,7 +9,10 @@ import { FullWidthCTA } from "@/components/FullWidthCTA";
 import { SEO, PRANA_JSONLD } from "@/lib/seo";
 import { PHONE, PHONE_LINK, WHATSAPP_LINK } from "@/lib/constants";
 import drImg from "@/assets/dr-rana.jpg";
-import hallwayImg from "@/assets/clinic-hallway.jpg";
+import clinicRoomImg from "@/assets/clinic-room.jpg";
+import cbctImg from "@/assets/cbct-scanner.jpg";
+import miamiSkylineImg from "@/assets/miami-skyline.jpg";
+import patientSmileImg from "@/assets/patient-smile-result.jpg";
 import baAllonx from "@/assets/before-after-allonx.jpg";
 import baVeneers from "@/assets/before-after-veneers.jpg";
 
@@ -178,17 +181,13 @@ const Homepage = () => (
           </AnimatedSection>
 
           <AnimatedSection delay={0.1}>
-            {/* IMAGE PLACEHOLDER: Clinic interior — modern treatment room or consultation area.
-                Clean, premium, warm lighting. Shows: advanced equipment (CBCT machine or chair),
-                not generic. Tone: luxury healthcare. NOT stock dentist office.
-                Search terms: "modern dental clinic interior luxury miami boutique practice" */}
             <img
-              src={hallwayImg}
-              alt="Prana Dental Miami — modern luxury implant studio"
+              src={clinicRoomImg}
+              alt="Prana Dental Miami — modern treatment room"
               className="w-full h-[460px] lg:h-[560px] object-cover"
               loading="lazy"
-              width={1200}
-              height={800}
+              width={1400}
+              height={900}
             />
           </AnimatedSection>
         </div>
@@ -270,24 +269,40 @@ const Homepage = () => (
     {/* ─── PROCESS ─── */}
     <section className="section-warm section-padding">
       <div className="container-main">
-        <AnimatedSection className="text-center mb-20">
+        <AnimatedSection className="text-center mb-16">
           <p className="eyebrow">How It Works</p>
           <h2 className="headline-section text-prana-charcoal">
             From Uncertainty<br />
             <em className="font-heading italic font-light">to a Permanent Smile.</em>
           </h2>
         </AnimatedSection>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+
+        {/* Step 1 — with CBCT image */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mb-16 pb-16 border-b border-prana-border">
+          <AnimatedSection>
+            <img
+              src={cbctImg}
+              alt="3D CBCT cone beam CT scanner at Prana Dental Miami"
+              className="w-full h-[340px] object-cover"
+              loading="lazy"
+            />
+          </AnimatedSection>
+          <AnimatedSection delay={0.1}>
+            <p className="font-heading text-[72px] leading-none text-prana-border mb-4 select-none">01</p>
+            <h3 className="font-body text-[18px] font-semibold text-prana-charcoal mb-3">Free CT Scan & Consultation</h3>
+            <p className="font-body text-[15px] text-prana-text-muted leading-[1.8]">
+              A full 3D CBCT scan at no cost. Dr. Rana reviews your imaging personally and tells you exactly what's possible before you commit to anything. No sales pitch. No pressure.
+            </p>
+          </AnimatedSection>
+        </div>
+
+        {/* Steps 2 & 3 */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8">
           {[
-            {
-              num: "01",
-              title: "Free CT Scan & Consultation",
-              body: "A full 3D CBCT scan at no cost. No sales pitch. Dr. Rana reviews your imaging personally and tells you exactly what's possible — before you commit to anything.",
-            },
             {
               num: "02",
               title: "Your Custom Digital Plan",
-              body: "Dr. Rana builds a precise digital treatment plan using your scan. You see your expected outcome on screen before we begin. Every placement is mapped in 3D.",
+              body: "Dr. Rana builds a precise digital treatment plan using your scan. You see your expected outcome on screen before we begin. Every implant placement is mapped in 3D.",
             },
             {
               num: "03",
@@ -295,14 +310,15 @@ const Homepage = () => (
               body: "Most full-arch patients leave with provisional teeth the same day. Final zirconia restorations — permanently fixed, fully functional — delivered within 3–5 months.",
             },
           ].map((step, i) => (
-            <AnimatedSection key={i} delay={i * 0.1} className="relative">
-              <p className="font-heading text-[80px] leading-none text-prana-border mb-5 select-none">{step.num}</p>
-              <h3 className="font-body text-[16px] font-semibold text-prana-charcoal mb-3 tracking-[-0.01em]">{step.title}</h3>
-              <p className="font-body text-[14px] text-prana-text-muted leading-[1.75]">{step.body}</p>
+            <AnimatedSection key={i} delay={i * 0.1}>
+              <p className="font-heading text-[72px] leading-none text-prana-border mb-4 select-none">{step.num}</p>
+              <h3 className="font-body text-[18px] font-semibold text-prana-charcoal mb-3">{step.title}</h3>
+              <p className="font-body text-[15px] text-prana-text-muted leading-[1.8]">{step.body}</p>
             </AnimatedSection>
           ))}
         </div>
-        <AnimatedSection className="text-center mt-16">
+
+        <AnimatedSection className="text-center mt-14">
           <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="btn-ghost inline-flex items-center gap-2">
             Book Your Free CT Scan <ChevronRight size={14} />
           </a>
@@ -461,13 +477,9 @@ const Homepage = () => (
               </Link>
             </div>
             <div className="hidden md:block">
-              {/* IMAGE PLACEHOLDER: All-on-X result — smiling patient (50s-60s), natural-looking full arch.
-                  Warm, high-contrast smile close-up OR before-after diptych in premium frame.
-                  Tone: lifestyle, confident, not clinical. NOT stock dentist smile.
-                  Search: "dental implant smile transformation middle-aged miami lifestyle portrait" */}
               <img
-                src={baAllonx}
-                alt="All-on-X full arch result at Prana Dental"
+                src={patientSmileImg}
+                alt="Patient result — All-on-X full arch at Prana Dental Miami"
                 className="w-full h-[320px] object-cover"
                 loading="lazy"
               />
@@ -641,6 +653,96 @@ const Homepage = () => (
             quote="My veneers look so natural that people don't know I have them. They just say I look different — better. I have never felt this confident in my life."
             delay={0.16}
           />
+        </div>
+      </div>
+    </section>
+
+    {/* ─── YOUTUBE / VIDEO CTA ─── */}
+    <section className="section-cream section-padding texture-overlay relative">
+      <div className="container-main relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <AnimatedSection>
+            <p className="eyebrow">Watch Dr. Rana</p>
+            <h2 className="headline-section text-prana-charcoal mb-6">
+              See the Work.<br />
+              <em className="font-heading italic font-light">Before You Decide.</em>
+            </h2>
+            <p className="body-text mb-8">
+              Dr. Rana shares real surgical cases, patient education, and honest answers on YouTube. Watch before you book — that's the point.
+            </p>
+            <a
+              href="https://youtube.com/@DoctorRanaDDS"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary inline-flex items-center gap-2"
+            >
+              Watch on YouTube <ChevronRight size={14} />
+            </a>
+          </AnimatedSection>
+          <AnimatedSection delay={0.1}>
+            {/* YouTube embed — channel trailer or pinned video */}
+            <div className="aspect-video w-full bg-prana-charcoal overflow-hidden relative group cursor-pointer">
+              <div className="absolute inset-0 flex items-center justify-center z-10">
+                <a
+                  href="https://youtube.com/@DoctorRanaDDS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col items-center gap-3 group"
+                  aria-label="Watch Dr. Rana on YouTube"
+                >
+                  <div className="w-16 h-16 rounded-full bg-white/10 border border-white/20 flex items-center justify-center group-hover:bg-prana-terra/80 transition-colors duration-300">
+                    <svg viewBox="0 0 24 24" className="w-7 h-7 fill-white ml-1" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 5v14l11-7z"/>
+                    </svg>
+                  </div>
+                  <span className="font-body text-[11px] uppercase tracking-[0.14em] text-white/60">@DoctorRanaDDS</span>
+                </a>
+              </div>
+              <img
+                src={clinicRoomImg}
+                alt="Dr. Rana YouTube channel — dental implant education"
+                className="w-full h-full object-cover opacity-30"
+                loading="lazy"
+              />
+            </div>
+          </AnimatedSection>
+        </div>
+      </div>
+    </section>
+
+    {/* ─── MIAMI / SPANISH CTA ─── */}
+    <section className="relative overflow-hidden">
+      <img
+        src={miamiSkylineImg}
+        alt="Miami skyline — Prana Dental Miami"
+        className="absolute inset-0 w-full h-full object-cover object-center"
+        loading="lazy"
+      />
+      <div className="absolute inset-0 bg-prana-charcoal/82" />
+      <div className="relative z-10 container-main px-6 md:px-12 py-24 md:py-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <AnimatedSection>
+            <p className="eyebrow">Miami's Implant Practice</p>
+            <h2 className="headline-section text-white mb-5">
+              Serving Miami,<br />
+              <em className="font-heading italic font-light">Brickell, Coral Gables,<br />Hialeah & Beyond.</em>
+            </h2>
+            <p className="font-body text-[15px] text-white/55 leading-[1.8]">
+              Located at 3050 Biscayne Blvd, Suite 703. Open Monday through Saturday, 8AM to 8PM. Walk-ins welcome for dental emergencies.
+            </p>
+          </AnimatedSection>
+          <AnimatedSection delay={0.1} className="border border-white/15 p-8 md:p-10 backdrop-blur-sm bg-white/5">
+            <p className="font-body text-[11px] uppercase tracking-[0.2em] text-prana-terra mb-4">Hablamos Español</p>
+            <h3 className="font-heading text-[28px] font-light text-white mb-4">
+              Atendemos a pacientes hispanohablantes.
+            </h3>
+            <p className="font-body text-[14px] text-white/55 leading-[1.8] mb-6">
+              Todo el equipo habla español. Consultas, diagnósticos, y planes de tratamiento completamente en español sin costo adicional.
+            </p>
+            <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="btn-white">
+              Reservar Consulta Gratuita
+            </a>
+          </AnimatedSection>
         </div>
       </div>
     </section>

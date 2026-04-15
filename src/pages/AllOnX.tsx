@@ -7,7 +7,8 @@ import { FullWidthCTA } from "@/components/FullWidthCTA";
 import { SEO, PRANA_JSONLD } from "@/lib/seo";
 import { WHATSAPP_LINK } from "@/lib/constants";
 import baAllonx from "@/assets/before-after-allonx.jpg";
-import hallwayImg from "@/assets/clinic-hallway.jpg";
+import cbctImg from "@/assets/cbct-scanner.jpg";
+import zirconiaImg from "@/assets/zirconia-arch.jpg";
 
 const STEPS = [
   { number: "01", title: "Free CT Scan + Consultation", description: "Full 3D CBCT imaging at no cost. Dr. Rana reviews everything personally and tells you exactly what's possible — before you commit to anything." },
@@ -37,13 +38,9 @@ const AllOnXPage = () => (
       <div className="absolute inset-0 bg-gradient-to-br from-prana-charcoal via-[#1f1c1a] to-[#0f0e0d] pointer-events-none" />
       <div className="absolute top-0 right-0 w-[50%] h-full pointer-events-none hidden lg:block">
         <div className="absolute inset-0 bg-gradient-to-r from-prana-charcoal via-prana-charcoal/50 to-transparent z-10" />
-        {/* IMAGE PLACEHOLDER: All-on-X result patient — smiling confidently, full arch visible.
-            Warm studio lighting, 50s-60s demographic, approachable and natural.
-            NOT a clinical procedure shot — lifestyle/portrait preferred.
-            Asset needed: patient release photography from clinic cases. */}
         <img
           src={baAllonx}
-          alt="All-on-X before and after result — Prana Dental Miami"
+          alt="All-on-X full arch transformation — Prana Dental Miami"
           className="w-full h-full object-cover object-center"
           width={900}
           height={1200}
@@ -102,13 +99,9 @@ const AllOnXPage = () => (
       <div className="container-main">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <AnimatedSection>
-            {/* IMAGE PLACEHOLDER: Clinic technology — CBCT machine or 3D imaging console.
-                Shows: advanced surgical planning environment.
-                Tone: clinical precision, premium healthcare.
-                Asset needed: clinic equipment photography. */}
             <img
-              src={hallwayImg}
-              alt="Advanced 3D imaging technology at Prana Dental"
+              src={cbctImg}
+              alt="3D CBCT cone beam CT scanner — Prana Dental Miami"
               className="w-full h-[420px] object-cover"
               loading="lazy"
             />

@@ -51,7 +51,7 @@
 }
 
 @layer components {
-  /* Subtle texture overlay */
+  /* Calacatta marble texture — 5% opacity on all light sections */
   .texture-overlay {
     position: relative;
   }
@@ -59,8 +59,38 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at 30% 20%, rgba(196, 138, 106, 0.06) 0%, transparent 50%),
-                radial-gradient(ellipse at 70% 80%, rgba(196, 138, 106, 0.04) 0%, transparent 50%);
+    background-image: url('/marble-texture.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Apply marble to all light sections */
+  .section-cream,
+  .section-warm,
+  .section-white {
+    position: relative;
+  }
+  .section-cream::before,
+  .section-warm::before,
+  .section-white::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      url('/marble-texture.jpg'),
+      repeating-linear-gradient(
+        105deg,
+        transparent 0px,
+        transparent 80px,
+        rgba(180,160,140,0.03) 80px,
+        rgba(180,160,140,0.03) 81px
+      );
+    background-size: cover, auto;
+    background-position: center, 0 0;
+    opacity: 0.05;
     pointer-events: none;
     z-index: 0;
   }

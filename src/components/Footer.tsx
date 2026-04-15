@@ -68,8 +68,10 @@ export const Footer = () => {
             <Link to="/all-on-x" className="block text-white/45 hover:text-white transition-colors">All-on-X Full Arch</Link>
             <Link to="/dental-implants" className="block text-white/45 hover:text-white transition-colors">Single Dental Implants</Link>
             <Link to="/veneers" className="block text-white/45 hover:text-white transition-colors">Porcelain Veneers</Link>
+            <Link to="/sedation" className="block text-white/45 hover:text-white transition-colors">Sedation Dentistry</Link>
             <Link to="/pricing" className="block text-white/45 hover:text-white transition-colors">Pricing & Financing</Link>
-            <Link to="/blog" className="block text-white/45 hover:text-white transition-colors">Patient Education</Link>
+            <Link to="/before-after" className="block text-white/45 hover:text-white transition-colors">Patient Results</Link>
+            <Link to="/about" className="block text-white/45 hover:text-white transition-colors">About Dr. Rana</Link>
           </div>
 
           {/* Contact col */}

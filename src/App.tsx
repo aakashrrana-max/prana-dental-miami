@@ -13,6 +13,9 @@ import AllOnX from "./pages/AllOnX";
 import DentalImplants from "./pages/DentalImplants";
 import Veneers from "./pages/Veneers";
 import Pricing from "./pages/Pricing";
+import About from "./pages/About";
+import BeforeAfter from "./pages/BeforeAfter";
+import Sedation from "./pages/Sedation";
 import Blog from "./pages/Blog";
 import BlogImplantsPainful from "./pages/BlogImplantsPainful";
 import BlogAllOn4Cost from "./pages/BlogAllOn4Cost";
@@ -35,6 +38,9 @@ const App = () => (
               <Route path="/dental-implants" element={<DentalImplants />} />
               <Route path="/veneers" element={<Veneers />} />
               <Route path="/pricing" element={<Pricing />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/before-after" element={<BeforeAfter />} />
+              <Route path="/sedation" element={<Sedation />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/are-dental-implants-painful" element={<BlogImplantsPainful />} />
               <Route path="/blog/all-on-4-cost-miami" element={<BlogAllOn4Cost />} />
