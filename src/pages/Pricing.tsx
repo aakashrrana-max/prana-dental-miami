@@ -8,9 +8,9 @@ const SERVICES = [
   {
     category: "Implant Dentistry",
     items: [
-      { name: "All-on-X Full Arch (per arch)", price: "From $10,000", note: "Compare to $25k–$35k at most Miami clinics", link: "/all-on-x" },
+      { name: "All-on-X Full Arch (per arch)", price: "From $10,000", note: "Compare to $25k to $35k at most Miami clinics", link: "/all-on-x" },
       { name: "Single Dental Implant", price: "$1,850 cash / $2,150 financed", link: "/dental-implants" },
-      { name: "Implant-Supported Bridge", price: "From $5,500", note: "Replace 3–4 teeth with 2 implants" },
+      { name: "Implant-Supported Bridge", price: "From $5,500", note: "Replace 3 to 4 teeth with 2 implants" },
     ],
   },
   {
@@ -25,24 +25,24 @@ const SERVICES = [
     category: "Restorative",
     items: [
       { name: "Porcelain Crown", price: "$999" },
-      { name: "Root Canal", price: "$800–$1,200" },
+      { name: "Root Canal", price: "$800 to $1,200" },
       { name: "Extraction (simple)", price: "From $99" },
-      { name: "Extraction (surgical)", price: "From $250–$500" },
+      { name: "Extraction (surgical)", price: "From $250 to $500" },
       { name: "Bone Graft", price: "From $500" },
     ],
   },
   {
     category: "Orthodontics",
     items: [
-      { name: "Clear Aligners", price: "From $3,500" },
-      { name: "Traditional Braces", price: "From $4,000" },
+      { name: "Clear Aligners", price: "From $3,500", link: "/ortho" },
+      { name: "Traditional Braces", price: "From $4,000", link: "/ortho" },
       { name: "Retainers", price: "From $300" },
     ],
   },
   {
     category: "Emergency Dentistry",
     items: [
-      { name: "Emergency Exam + X-Ray", price: "$99" },
+      { name: "Emergency Exam + X-Ray", price: "$99", link: "/emergency" },
       { name: "Same-Day Pain Relief", price: "Varies by treatment" },
       { name: "Trauma / Broken Tooth Repair", price: "From $200" },
     ],
@@ -58,7 +58,6 @@ const PricingPage = () => (
       jsonLd={PRANA_JSONLD}
     />
 
-    {/* HERO */}
     <section className="section-cream section-padding pt-32 md:pt-40 texture-overlay relative">
       <div className="container-main text-center max-w-3xl mx-auto relative z-10">
         <AnimatedSection>
@@ -73,7 +72,6 @@ const PricingPage = () => (
       </div>
     </section>
 
-    {/* PRICING TABLES */}
     <section className="section-white section-padding">
       <div className="container-main max-w-[800px] mx-auto">
         {SERVICES.map((group, gi) => (
@@ -101,7 +99,6 @@ const PricingPage = () => (
       </div>
     </section>
 
-    {/* FINANCING */}
     <section className="section-warm section-padding">
       <div className="container-main max-w-[700px] mx-auto text-center">
         <AnimatedSection>

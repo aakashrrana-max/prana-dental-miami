@@ -24,8 +24,8 @@ const BlogIndex = () => (
       jsonLd={PRANA_JSONLD}
     />
 
-    <section className="section-ivory pt-28 md:pt-36 pb-20 md:pb-28">
-      <div className="container-main px-6 md:px-12">
+    <section className="section-cream pt-28 md:pt-36 pb-20 md:pb-28 px-6 md:px-12">
+      <div className="container-main">
         <AnimatedSection className="text-center mb-16">
           <p className="eyebrow">Insights</p>
           <h1 className="headline-section text-prana-charcoal">The Prana Dental Blog.</h1>
