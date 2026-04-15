@@ -25,7 +25,7 @@
     --border: 28 10% 84%;
     --input: 28 10% 84%;
     --ring: 0 0% 0%;
-    --radius: 0.25rem;
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 100%;
     --sidebar-foreground: 0 0% 10%;
@@ -51,7 +51,7 @@
 }
 
 @layer components {
-  /* Calacatta marble texture — 5% opacity on all light sections */
+  /* Calacatta marble texture overlay */
   .texture-overlay {
     position: relative;
   }
@@ -67,7 +67,7 @@
     z-index: 0;
   }
 
-  /* Apply marble to all light sections */
+  /* Apply calacatta marble to all light sections */
   .section-cream,
   .section-warm,
   .section-white {
@@ -135,30 +135,29 @@
     @apply text-[16px] leading-[1.7] font-body font-light text-prana-text-muted;
   }
 
-  /* Buttons */
+  /* Buttons - all rounded, Apple-style */
   .btn-primary {
     @apply inline-block bg-prana-charcoal text-white font-body font-medium text-[12px] uppercase tracking-[0.14em]
-           px-7 py-3.5 rounded-sm transition-all duration-300 hover:bg-prana-black cursor-pointer text-center;
+           px-7 py-3.5 rounded-full transition-all duration-300 hover:bg-prana-black cursor-pointer text-center;
   }
   .btn-ghost {
     @apply inline-block border border-prana-charcoal text-prana-charcoal font-body font-medium text-[12px] uppercase tracking-[0.14em]
-           px-7 py-3.5 rounded-sm transition-all duration-300 hover:bg-prana-charcoal hover:text-white cursor-pointer text-center;
+           px-7 py-3.5 rounded-full transition-all duration-300 hover:bg-prana-charcoal hover:text-white cursor-pointer text-center;
   }
   .btn-white {
     @apply inline-block bg-white text-prana-charcoal font-body font-medium text-[12px] uppercase tracking-[0.14em]
-           px-7 py-3.5 rounded-sm transition-all duration-300 hover:bg-white/90 cursor-pointer text-center;
+           px-7 py-3.5 rounded-full transition-all duration-300 hover:bg-white/90 cursor-pointer text-center;
   }
   .btn-ghost-white {
     @apply inline-block border border-white/30 text-white font-body font-medium text-[12px] uppercase tracking-[0.14em]
-           px-7 py-3.5 rounded-sm transition-all duration-300 hover:border-white cursor-pointer text-center;
+           px-7 py-3.5 rounded-full transition-all duration-300 hover:border-white cursor-pointer text-center;
   }
-  /* Hero dark-bg specific buttons */
   .btn-hero-primary {
     @apply inline-block bg-prana-terra text-white font-body font-semibold text-[12px] uppercase tracking-[0.14em]
-           px-8 py-4 rounded-sm transition-all duration-300 hover:bg-[#b87a5a] cursor-pointer text-center;
+           px-8 py-4 rounded-full transition-all duration-300 hover:bg-[#b87a5a] cursor-pointer text-center;
   }
   .btn-hero-ghost {
     @apply inline-block border border-white/25 text-white/80 font-body font-medium text-[12px] uppercase tracking-[0.14em]
-           px-8 py-4 rounded-sm transition-all duration-300 hover:border-white/50 hover:text-white cursor-pointer text-center;
+           px-8 py-4 rounded-full transition-all duration-300 hover:border-white/50 hover:text-white cursor-pointer text-center;
   }
 }

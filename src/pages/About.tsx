@@ -9,7 +9,7 @@ import hallwayImg from "@/assets/clinic-hallway.jpg";
 
 const FAQ = [
   { q: "Does Dr. Rana perform every procedure himself?", a: "Yes. Every consultation, surgical plan, and implant placement is done by Dr. Rana personally. We do not delegate surgical cases to associates or residents." },
-  { q: "What implant systems does Dr. Rana use?", a: "Nobel Biocare and Straumann — two of the most clinically validated implant systems in the world. The same brands used by top academic centers and specialty practices charging 2–3x more." },
+  { q: "What implant systems does Dr. Rana use?", a: "Nobel Biocare and Straumann - two of the most clinically validated implant systems in the world. The same brands used by top academic centers and specialty practices charging 2 to 3x more." },
   { q: "Is Prana Dental accredited?", a: "Prana Dental is a fully licensed Florida dental practice. Dr. Rana holds a DMD from a U.S.-accredited dental school, is CBCT certified, and holds IV sedation credentials." },
   { q: "How do I get started?", a: "Book a free consultation and CT scan. No commitment, no pressure. Dr. Rana will review your case and tell you exactly what's possible." },
 ];
@@ -18,7 +18,7 @@ const About = () => (
   <>
     <SEO
       title="About Dr. Aakash Rana | Prana Dental Miami"
-      description="Meet Dr. Aakash Rana, DMD — implant surgeon and founder of Prana Dental Miami. 3,000+ implants placed personally. Nobel Biocare trained. IV sedation certified."
+      description="Meet Dr. Aakash Rana, DMD - implant surgeon and founder of Prana Dental Miami. 3,000+ implants placed personally. Nobel Biocare trained. IV sedation certified."
       canonical="https://pranadentalmia.com/about"
       jsonLd={PRANA_JSONLD}
     />
@@ -43,7 +43,7 @@ const About = () => (
             </p>
             <div className="flex flex-wrap gap-3">
               {["3,000+ Implants", "300+ Full Arches", "10+ Years", "Nobel Biocare Trained"].map(b => (
-                <span key={b} className="font-body text-[11px] border border-white/15 text-white/60 px-3 py-1.5 rounded-sm uppercase tracking-[0.06em]">{b}</span>
+                <span key={b} className="font-body text-[11px] border border-white/15 text-white/60 px-3 py-1.5 rounded-2xl uppercase tracking-[0.06em]">{b}</span>
               ))}
             </div>
           </motion.div>
@@ -65,7 +65,7 @@ const About = () => (
               Prana Dental was founded on a direct observation: premium implant care in Miami was priced as if the surgery were made of gold. The implants weren't. The materials weren't. The markups were.
             </p>
             <p className="body-text mb-5">
-              Dr. Rana set out to build a practice that used the same Nobel Biocare and Straumann-grade systems — the actual clinical gold standard — without the institutional overhead that pushes All-on-X cases past $30,000.
+              Dr. Rana set out to build a practice that used the same Nobel Biocare and Straumann-grade systems - the actual clinical gold standard - without the institutional overhead that pushes All-on-X cases past $30,000.
             </p>
             <p className="body-text mb-8">
               The result: a surgical practice where patients get honest pricing, one doctor who does their own work, and outcomes that speak for themselves across 3,000+ cases.
@@ -92,7 +92,7 @@ const About = () => (
                 Asset: clinic-room.jpg (downloading) */}
             <img
               src={hallwayImg}
-              alt="Prana Dental Miami — clinic interior"
+              alt="Prana Dental Miami - clinic interior"
               className="w-full h-[500px] object-cover mb-6"
               loading="lazy"
             />

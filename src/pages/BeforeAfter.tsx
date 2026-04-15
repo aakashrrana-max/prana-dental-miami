@@ -17,7 +17,7 @@ const CASES = [
     title: "Full Arch Restoration",
     detail: "Upper arch · 6 implants · Same-day provisional · Final zirconia at 14 weeks",
     img: baAllonx,
-    // IMAGE PLACEHOLDER: Upper arch All-on-X before/after — real patient, full smile.
+    // IMAGE PLACEHOLDER: Upper arch All-on-X before/after - real patient, full smile.
     // Asset needed: high-res split before/after from clinic photography. Consent required.
   },
   {
@@ -54,7 +54,7 @@ const CASES = [
     title: "Single Tooth Replacement",
     detail: "Upper premolar · Titanium implant + zirconia crown · Placed in one visit",
     img: baAllonx,
-    // IMAGE PLACEHOLDER: Single implant case — close-up showing natural integration.
+    // IMAGE PLACEHOLDER: Single implant case - close-up showing natural integration.
   },
   {
     id: 6,
@@ -63,7 +63,7 @@ const CASES = [
     title: "Front Tooth Implant",
     detail: "Upper central incisor · Aesthetic zone · Custom shade-matched crown",
     img: baAllonx,
-    // IMAGE PLACEHOLDER: Aesthetic zone implant — the hardest case to do well. Shows expertise.
+    // IMAGE PLACEHOLDER: Aesthetic zone implant - the hardest case to do well. Shows expertise.
   },
 ];
 
@@ -112,7 +112,7 @@ const BeforeAfter = () => {
               <button
                 key={f.key}
                 onClick={() => setActive(f.key)}
-                className={`font-body text-[11px] uppercase tracking-[0.12em] px-5 py-2.5 rounded-sm border transition-all duration-200 ${
+                className={`font-body text-[11px] uppercase tracking-[0.12em] px-5 py-2.5 rounded-2xl border transition-all duration-200 ${
                   active === f.key
                     ? "bg-prana-charcoal text-white border-prana-charcoal"
                     : "border-prana-border text-prana-text-muted hover:border-prana-charcoal/30 hover:text-prana-charcoal"
@@ -131,7 +131,7 @@ const BeforeAfter = () => {
                   <div className="overflow-hidden">
                     <img
                       src={c.img}
-                      alt={`${c.label} — ${c.title} | Prana Dental Miami`}
+                      alt={`${c.label} - ${c.title} | Prana Dental Miami`}
                       className="w-full h-[360px] object-cover group-hover:scale-[1.02] transition-transform duration-700"
                       loading="lazy"
                     />
@@ -156,7 +156,7 @@ const BeforeAfter = () => {
               <em className="font-heading italic font-light">Our Next Result.</em>
             </h2>
             <p className="body-text max-w-md mx-auto mb-8">
-              Free CT scan and consultation. Dr. Rana will review your case and show you what's possible — before you commit.
+              Free CT scan and consultation. Dr. Rana will review your case and show you what's possible - before you commit.
             </p>
             <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="btn-primary">
               Book Free Consultation
