@@ -928,8 +928,8 @@ const Homepage = () => {
       {/* ─── MIAMI / SPANISH CTA ─── */}
       <section className="relative overflow-hidden">
         <img
-          src={miamiSkylineImg}
-          alt="Miami skyline — Prana Dental Miami"
+          src={clinicHallwayImg}
+          alt="Prana Dental Miami — Edgewater studio"
           className="absolute inset-0 w-full h-full object-cover object-center"
           loading="lazy"
         />

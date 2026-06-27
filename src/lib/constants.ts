@@ -1,7 +1,7 @@
-export const PHONE = "(201) 280-3528";
-export const PHONE_RAW = "2012803528";
-export const PHONE_LINK = "tel:+12012803528";
-export const WHATSAPP_LINK = "https://wa.me/12012803528";
+export const PHONE = "(786) 579-0521";
+export const PHONE_RAW = "7865790521";
+export const PHONE_LINK = "tel:+17865790521";
+export const WHATSAPP_LINK = "https://wa.me/17865790521";
 export const ADDRESS = "3050 Biscayne Blvd, Suite 703, Miami, FL 33137";
 export const INSTAGRAM = "https://instagram.com/doctorrana.dds";
 export const YOUTUBE = "https://youtube.com/@DoctorRanaDDS";

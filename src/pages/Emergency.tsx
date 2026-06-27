@@ -3,6 +3,7 @@ import { ChevronRight, Phone } from "lucide-react";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { AccordionFAQ } from "@/components/AccordionFAQ";
 import { FullWidthCTA } from "@/components/FullWidthCTA";
+import { RelatedTreatments } from "@/components/RelatedTreatments";
 import { SEO, PRANA_JSONLD } from "@/lib/seo";
 import { PHONE, PHONE_LINK, WHATSAPP_LINK } from "@/lib/constants";
 import clinicImg from "@/assets/clinic-room.jpg";
@@ -125,6 +126,7 @@ const Emergency = () => (
       </div>
     </section>
 
+    <RelatedTreatments current="emergency" />
     <FullWidthCTA />
   </>
 );

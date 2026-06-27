@@ -4,6 +4,7 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { ProcessTimeline } from "@/components/ProcessTimeline";
 import { AccordionFAQ } from "@/components/AccordionFAQ";
 import { FullWidthCTA } from "@/components/FullWidthCTA";
+import { RelatedTreatments } from "@/components/RelatedTreatments";
 import { SEO, PRANA_JSONLD } from "@/lib/seo";
 import { WHATSAPP_LINK } from "@/lib/constants";
 import baAllonx from "@/assets/before-after-allonx.jpg";
@@ -206,6 +207,7 @@ const AllOnXPage = () => (
       </div>
     </section>
 
+    <RelatedTreatments current="all-on-x" />
     <FullWidthCTA />
   </>
 );

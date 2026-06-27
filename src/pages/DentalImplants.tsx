@@ -5,6 +5,7 @@ import { ProcessTimeline } from "@/components/ProcessTimeline";
 import { AccordionFAQ } from "@/components/AccordionFAQ";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { FullWidthCTA } from "@/components/FullWidthCTA";
+import { RelatedTreatments } from "@/components/RelatedTreatments";
 import { SEO, PRANA_JSONLD } from "@/lib/seo";
 import { WHATSAPP_LINK } from "@/lib/constants";
 import drImg from "@/assets/dr-rana.jpg";
@@ -186,6 +187,7 @@ const DentalImplantsPage = () => (
       </div>
     </section>
 
+    <RelatedTreatments current="dental-implants" />
     <FullWidthCTA />
   </>
 );

@@ -4,6 +4,7 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { ProcessTimeline } from "@/components/ProcessTimeline";
 import { AccordionFAQ } from "@/components/AccordionFAQ";
 import { FullWidthCTA } from "@/components/FullWidthCTA";
+import { RelatedTreatments } from "@/components/RelatedTreatments";
 import { SEO, PRANA_JSONLD } from "@/lib/seo";
 import { WHATSAPP_LINK } from "@/lib/constants";
 import baVeneers from "@/assets/before-after-veneers.jpg";
@@ -162,6 +163,7 @@ const VeneersPage = () => (
       </div>
     </section>
 
+    <RelatedTreatments current="veneers" />
     <FullWidthCTA />
   </>
 );
